@@ -22,7 +22,8 @@
 			</article>
 
 			<article>
-				<h3>Control</h3>
+				Search: <input type="text" id="searchBox" name="searchBox" />
+				<button id="resetButton">Reset</button>
 			</article>
 		</section>
 	</body>
@@ -30,10 +31,13 @@
 	<script type="text/javascript">
 		$(document).ready(function() {
 			fetchFoodTruckFile("https://data.sfgov.org/api/views/rqzj-sfat/rows.csv");
+			$('#searchBox').on('keyup change', searchFoodTrucks);
+			$('#resetButton').click(resetFoodTruckMarkers);
 		});
+		var map;
 
 		function getMap() {
-			var map = new Microsoft.Maps.Map('#map');
+			map = new Microsoft.Maps.Map('#map');
 		}
 	</script>
 </html>

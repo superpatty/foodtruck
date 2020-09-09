@@ -25,3 +25,17 @@ Good luck! Please send a link to your solution on Github back to us at least 12 
 - Overall idea: create a simple, quick way to find the nearest five restaurants or search by food type/items, etc...
 - Setting up flexbox for simple layout
 - Researching Bing maps api
+- Figured out how to center the map
+- Setup retrieval & parsing of csv data
+- Center the map based on the available GPS coordinates in the csv data
+- Filter out invalid GPS coordinates
+- Plot all food truck locations
+- use custom food truck icon
+- add search capabilities
+- filter map markers to just only food trucks that match search term
+
+next steps:
+- add list view of matching food trucks
+- add walking directions to selected food truck from current location
+- add click to zoom where user can click food truck name in right rail and zoom map to the location
+- add ability to set starting point for walking directions
