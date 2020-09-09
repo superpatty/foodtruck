@@ -1,0 +1,50 @@
+html, body {
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+header {
+    background-color: bisque;
+    color: darkslateblue;
+    line-height: 60px;
+    text-align: center;
+    margin: 0px 20px;
+}
+
+section {
+    height: 100%;
+    background-color: blueviolet;
+    display: flex;
+    flex-direction: row;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    background-color: aqua;
+}
+
+article:nth-of-type(1) {
+    flex: 4;
+}
+
+article:nth-of-type(2) {
+    flex: 1;
+    border-left: 1px solid black;
+}
+
+#bingMap {
+    position: relative;
+    /*width: 600px;*/
+    /*height: 400px;*/
+}
+
+#errorMessage {
+    display: none;
+    background-color: palevioletred;
+    margin: 5px 40px;
+    color: black;
+    font-weight: bold;
+    font-size: 30px;
+}

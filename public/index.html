@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Find a Food Truck</title>
+		<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-csv/0.71/jquery.csv-0.71.min.js"></script>
+		<script type="text/javascript" src="/foodtruck.js"></script>
+		<script type='text/javascript' src='https://www.bing.com/api/maps/mapcontrol?callback=getMap&key=AvwpP6ykJyjF5UpLThnkxUmYajaKsylrn-AXxM9f0SDutQLWo0KZRfDkmHH8T9aV' async defer></script>
+		<link rel="stylesheet" href="/foodtruck.css" />
+
+	</head>
+	<body>
+		<header>
+			<h1>Find a Food Truck</h1>
+			<article id="errorMessage">
+			</article>
+		</header>
+		<section>
+			<article id="map">
+			</article>
+
+			<article>
+				<h3>Control</h3>
+			</article>
+		</section>
+	</body>
+
+	<script type="text/javascript">
+		$(document).ready(function() {
+			fetchFoodTruckFile("https://data.sfgov.org/api/views/rqzj-sfat/rows.csv");
+		});
+
+		function getMap() {
+			var map = new Microsoft.Maps.Map('#map');
+		}
+	</script>
+</html>
